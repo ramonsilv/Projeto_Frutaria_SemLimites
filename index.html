@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/css/style.css">
+    <script src="public/js/script.js"></script>
+    <title>Frutaria - Calculadora</title>
+    <link rel="shortcut icon" href="public/img/icone.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <h1>Frutaria - Calcular Vendas</h1>
+        <form action="public/php/processar.php" method="POST">
+            <div class="form-group">
+                <label for="maca">
+                    <img src="public/img/maca.png" alt="imagem maça" width="70px" height="50px"><br> R$2.00:
+                </label>
+                <div class="buttons">
+                    <button type="button" onclick="botaoValores('maca', -1)">-</button>
+                    <input type="text" id="maca" name="maca" value="0" readonly>
+                    <button type="button" onclick="botaoValores('maca', 1)">+</button>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="banana">
+                    <img src="public/img/banana.png" alt="imagem banana" width="70px" height="50px"><br>R$ 1.50:
+                </label>
+                <div class="buttons">
+                    <button type="button" onclick="botaoValores('banana', -1)">-</button>
+                    <input type="text" id="banana" name="banana" value="0" readonly>
+                    <button type="button" onclick="botaoValores('banana', 1)">+</button>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="laranja">
+                    <img src="public/img/laranja.png" alt="imagem laranja" width="50px" height="50px"><br>R$2.00:
+                </label>
+                <div class="buttons">
+                    <button type="button" onclick="botaoValores('laranja', -1)">-</button>
+                    <input type="text" id="laranja" name="laranja" value="0" readonly>
+                    <button type="button" onclick="botaoValores('laranja', 1)">+</button>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="uva">
+                    <img src="public/img/uva.png" alt="imagem uva" width="50px" height="50px"><br> R$4.00:
+                </label>
+                <div class="buttons">
+                    <button type="button" onclick="botaoValores('uva', -1)">-</button>
+                    <input type="text" id="uva" name="uva" value="0" readonly>
+                    <button type="button" onclick="botaoValores('uva', 1)">+</button>
+                </div>
+            </div>
+            <input type="submit" value="Calcular Total de Vendas">
+        </form>
+    </div>
+</body>
+</html>
