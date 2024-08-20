@@ -54,11 +54,11 @@
     }
     // Exibe o total final e os descontos aplicados
     echo "<h1>Resumo da Venda</h1><br><br>";
-    echo "<h2>Total de frutas vendidas: $total_frutas</h2></b>";
-    echo "<h3>Total sem desconto: R$ " . number_format($total_maca + $total_banana + $total_laranja + $total_uva, 2) . "</h3>";
+    echo "<h2>Total de frutas vendidas: $total_frutas</h2><br>";
     echo "<h3>$desconto_10aplicado</h3>";
     echo "<h3>$desconto5_aplicado</h3>";
-    echo "<br><br><br><br><h2>Total final após descontos: R$ " . number_format($vendas_total, 2) . "</h2>";
+    echo "<br><br><br><h2>Total sem desconto: R$ " . number_format($total_maca + $total_banana + $total_laranja + $total_uva, 2) . "</h2>";
+    echo "<h2>Total final após descontos: R$ " . number_format($vendas_total, 2) . "</h2>";
     ?>
   </div>
 </body>
